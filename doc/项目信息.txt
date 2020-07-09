@@ -1,0 +1,8 @@
+Ak：YczxFR9qddVDQkfrgp6K25VKiO1yAV1DAtIkyOb3
+Sk：Np9JCWG_1RIl4bgjwdsdk5m0kuFcgXXQdNnoXGGA
+bucketName=dili-fresh
+测试用CNAME: idv093d.qiniudns.com
+生成用CNAME: nong12.com.www.qiniudns.com
+
+sungongbo@dilifresh.com
+SGB8888999qny

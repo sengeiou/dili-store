@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.dili</groupId>
+	<artifactId>dili-store</artifactId>
+	<name>dili-store</name>
+	<version>1.1.0-SNAPSHOT</version>
+	<!--<version>1.0.0.RELEASE</version>-->
+	<description>存储项目</description>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>com.dili</groupId>
+		<artifactId>dili-parent</artifactId>
+		<version>3.6.7-SNAPSHOT</version>
+	</parent>
+
+	<modules>
+		<module>store-sdk</module>
+		<module>aliyun-store-sdk</module>
+	</modules>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+
+		<!-- MyBatis Generator -->
+		<!-- Java接口和实体类 -->
+		<targetJavaProject>${basedir}/src/main/java</targetJavaProject>
+		<targetMapperPackage>com.dili.store.dao</targetMapperPackage>
+		<targetModelPackage>com.dili.store.domain</targetModelPackage>
+		<targetServicePackage>com.dili.store.service</targetServicePackage>
+		<targetProviderPackage>com.dili.store.provider</targetProviderPackage>
+		<targetControllerPackage>com.dili.store.controller</targetControllerPackage>
+		<templateRootDir>${basedir}/mbg-templates</templateRootDir>
+		<projectdir>${basedir}</projectdir>
+		<!-- XML生成路径 -->
+		<targetResourcesProject>${basedir}/src/main/resources</targetResourcesProject>
+		<targetXMLPackage>mapper</targetXMLPackage>
+		<!-- 依赖版本 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<mapper.version>3.3.9</mapper.version>
+		<mysql.version>5.1.38</mysql.version>
+	</properties>
+
+
+	<build>
+		<!-- 资源文件过滤 -->
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<!-- 编译JDK版本 -->
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+					<parameters>true</parameters>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+
+
+</project>

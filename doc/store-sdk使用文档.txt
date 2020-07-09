@@ -1,0 +1,16 @@
+1.0.2支持支持bucket和命名空间配置，
+##必填，无默认值
+qiniu.accessKey=YczxFR9qddVDQkfrgp6K25VKiO1yAV1DAtIkyOb3
+##必填，无默认值
+qiniu.secretKey=Np9JCWG_1RIl4bgjwdsdk5m0kuFcgXXQdNnoXGGA
+##当前为默认值
+qiniu.bucketName=dili-fresh
+##当前为默认值
+qiniu.host=http://img10.nong12.com/
+##当前为默认值
+qiniu.namespace=groupbuy
+
+1.0.3 更新说明：
+增加通用上传功能，直接项目中调用XXX/uploadImage/upload.action
+返回Baseoutput<Map>对象，
+Map说明：key-为存储七牛云的key，value-拼接全路径的URL地址
